@@ -5,19 +5,20 @@ def muestramenu():
     print("2. Crear o eliminar un personaje")
     print("3. Buscar un Personaje")
     print("4. Ver lista de personajes")
-    print("5. Salir del Programa")
+    print("4. Ver lista de personajes vivos")
+    print("6. Salir del Programa")
 
 def pedir_opcion_menu_principal():
     while True:
         try:
             opcion = int(input("Elige una opción del menú: "))
-            if 1 <= opcion <= 5:
+            if 1 <= opcion <= 6:
                 return opcion
             else:
-                print("Opción errónea. Elija un número del 1 al 5.")
+                print("Opción errónea. Elija un número del 1 al 6.")
                 muestramenu()
         except ValueError:
-            print("Por favor, introduce un número válido del menú (1-5).")
+            print("Por favor, introduce un número válido del menú (1-6).")
 
 def menu():
     muestramenu()

@@ -4,7 +4,7 @@ from ModeloDatos import *
 
 def main():
     opcion=menu()
-    while opcion >= 1 and opcion<=5:
+    while opcion >= 1 and opcion<=6:
         if opcion==1:
             #Cargar personages
             print("Opcion 1 elegida")
@@ -19,7 +19,6 @@ def main():
             else:
                 eliminarpersonaje()
             
-            
         elif opcion==3:
             #Buscar un personaje 
             print("Opcion 3 elegida")
@@ -31,9 +30,14 @@ def main():
             print("Opcion 4 elegida")
             opcioninfo=menuInfo()
             print(verDatos(opcioninfo))
+        elif opcion==5:
+            #Ver lista de personajes
+            print("Opcion 6 elegida")
+            opcioninfo=menuInfo()
+            print(verDatos(opcioninfo))
         else:
             #Salir
-            print("Opcion 5 elegida")
+            print("Opcion 6 elegida")
             print("Saliendo del programa. . .")
             exit()
         opcion=menu()
