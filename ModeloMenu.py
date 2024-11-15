@@ -5,7 +5,7 @@ def muestramenu():
     print("2. Crear o eliminar un personaje")
     print("3. Buscar un Personaje")
     print("4. Ver lista de personajes")
-    print("4. Ver lista de personajes vivos")
+    print("5. Ver lista de personajes vivos")
     print("6. Salir del Programa")
 
 def pedir_opcion_menu_principal():

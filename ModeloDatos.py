@@ -102,3 +102,10 @@ def verDatos(opcioninfo):
     else:
         return VerPersonajesCompleto()
     
+def verVivos():
+    salida= ""
+    for char in Listacharacters:
+        if char.status=="Alive":
+            salida+=char.get_infoesne()+"\n"
+    return salida
+    

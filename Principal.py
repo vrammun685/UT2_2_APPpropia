@@ -32,9 +32,8 @@ def main():
             print(verDatos(opcioninfo))
         elif opcion==5:
             #Ver lista de personajes
-            print("Opcion 6 elegida")
-            opcioninfo=menuInfo()
-            print(verDatos(opcioninfo))
+            print("Opcion 5 elegida")
+            print(verVivos())
         else:
             #Salir
             print("Opcion 6 elegida")
